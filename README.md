@@ -46,3 +46,4 @@ hdfs dfs -cat /src/main/output/stocks/*
 hdfs dfs -cat /src/main/output/words/*
 然后用 hdfs dfs -get /src/main/output/words /home/homework/homework1.1/demo/src/main/java/com/example/output将文件保存到本地
 注意多次重复执行时要想用hdfs rm将上次生成文件删去才能重复执行。
+实验中出现的问题主要是关于java操作调用的问题，还有一个至今没解决的问题是实验时候老是容易崩在运行hdfs jar的时候，在可扩展性方面我觉得最好用Python对文件进行预处理后再用adoop可能效果会更好
